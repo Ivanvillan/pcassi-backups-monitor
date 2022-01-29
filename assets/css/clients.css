@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Adihaus';
+    src: URL('../../assets/fonts/AdihausDIN-Regular.ttf') format('truetype');
+}
+body{
+    font-family: 'Adihaus', 'Helvetica', 'Arial', sans-serif;
+    color: #101416;
+}
+
+.container{
+    margin-left: 220px !important;
+}
+
+.listClients{
+    display: grid; 
+    grid-template-columns: 260px 260px 260px;
+    margin-top: 20px;
+    grid-gap: 40px;
+}
+.cardClient{
+    width: 260px;
+    height: 180px;
+    background: #2A3034;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transition: 0.3s;
+    user-select: none;
+}
+.cardClient:hover{
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btnAddClient{
+    background: #D9EAF9;
+    color: #101416;
+    border-radius: 5px;
+}
+.btnAddClient:hover{
+    background: #F1F9FF;
+}
+.colAddClient{
+    margin-top: 25px;
+}
+.colArrowBack{
+    margin-top: 27px;
+}
+.iconArrowBack{
+    color: #101416 !important;
+}
+.modal{ 
+    width: 75% !important; 
+}
+.colModalAddClient{
+    padding-top: 20px !important;
+}
+.modalClose{
+    color: #101416 !important;
+}
+.divider{
+    margin-bottom: 20px !important;
+}
+.addClient{
+    background: #101416 !important;
+    color: #F1F9FF;
+}
+.addClient:hover{
+    background: #101416 !important;
+}
+.input-field input[type=text]:focus + label {
+    color: #101416 !important;
+}
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #101416 !important;
+    box-shadow: 0 1px 0 0 #101416 !important;
+}
+#toast-container {
+    min-width: 10%;
+    margin-right: 20px;
+    top: 80%;
+    transform: translateX(50%) translateY(50%);
+}
+.toast{
+    background-color: #101416 !important;
+    color: #F1F9FF;
+    font-family: 'Adihaus', 'Helvetica', 'Arial', sans-serif !important;
+}
+.btnLogout{
+    background: #D9EAF9;
+    color: #101416;
+    border-radius: 5px;
+    height: 35px !important;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+.btnLogout:hover{
+    background: #F1F9FF;
+}
+.delete {
+    color: #101416;
+    background-color: #F1F9FF;
+    border-radius: 0px 10px 0px 10px;
+    position: relative;
+    right: 8px;
+    cursor: pointer;
+}

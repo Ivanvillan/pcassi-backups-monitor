@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Adihaus';
+    src: URL('../../assets/fonts/AdihausDIN-Regular.ttf') format('truetype');
+}
+body{
+    font-family: 'Adihaus', 'Helvetica', 'Arial', sans-serif;
+    background: url('../../assets/img/background5.jpg')no-repeat fixed; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:contain;
+}
+.imageTop{
+    margin-top: 80px;
+}
+.firstButton{
+    margin-top: 60px;
+}
+.secondButton{
+    margin-top: 40px;
+}
+.imageBottom{
+    margin-top: 140px;
+}
+a{
+    width: 350px !important;
+    height: 35px !important;
+    border-radius: 20px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    text-transform: none !important;
+    background-color: #D9EAF9 !important;
+    color: #101416 !important;
+    font-size: 24px !important;
+    display: inline-block;
+    position: relative;
+}
+a:hover{
+    background-color: #F1F9FF !important;
+}
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #101416;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    }
+    a:hover:after { 
+    width: 50%; 
+    left: 25%; 
+    }
+@media (min-width: 768px){
+    .container{
+        width: 400px !important;
+        margin-right: 80px !important;
+    }
+}
+@media (max-width: 768px){
+    a{
+        width: 350px !important;
+        height: 35px !important;
+        border-radius: 20px !important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+        text-transform: none !important;
+        background-color: #101416 !important;
+        color: #F1F9FF !important;
+        font-size: 24px !important;
+        border: #F1F9FF solid 2px !important;
+    }
+    a:hover{
+        width: 350px !important;
+        height: 35px !important;
+        border-radius: 20px !important;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+        text-transform: none !important;
+        background-color: #F1F9FF !important;
+        color: #101416 !important;
+        font-size: 24px !important;
+        border: #101416 solid 2px !important;
+        text-decoration: underline #101416;
+    }
+}
+.btnLogout{
+    background: #D9EAF9;
+    color: #101416;
+    border-radius: 5px;
+    height: 35px !important;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+.btnLogout:hover{
+    background: #F1F9FF;
+}
